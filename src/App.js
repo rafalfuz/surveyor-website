@@ -1,3 +1,14 @@
+import { ThemeProvider } from "styled-components";
+import { GlobalStyles } from "./theme/GlobalStyles";
+import { theme } from "./theme/mainTheme";
+
 export const App = () => {
-  return <h1>Hello World!</h1>;
+  return (
+    <>
+      <GlobalStyles />
+      <ThemeProvider theme={theme}>
+        <h1>Lets get the money</h1>
+      </ThemeProvider>
+    </>
+  );
 };
