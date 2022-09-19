@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.js": "/surveyor-website/static/js/main.c102c738.js",
+    "static/media/surveyorWorksDesc.jpg": "/surveyor-website/static/media/surveyorWorksDesc.3809d955bc0c753c6641.jpg",
+    "static/media/surveyorWorksMobile.jpg": "/surveyor-website/static/media/surveyorWorksMobile.67f844415d209474b720.jpg",
+    "static/media/mapBottomMobile.jpg": "/surveyor-website/static/media/mapBottomMobile.15f599bcf562a2784b7a.jpg",
+    "static/media/surveyorManWhite.png": "/surveyor-website/static/media/surveyorManWhite.b6fd8e3c447fe4a57f44.png",
+    "index.html": "/surveyor-website/index.html",
+    "main.c102c738.js.map": "/surveyor-website/static/js/main.c102c738.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.c102c738.js"
+  ]
+}
