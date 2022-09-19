@@ -1,23 +1,43 @@
-import { StyledNavbar, 
-    StyledNavbarContainer, 
-    StyledLinkContainer,
-StyledLogo,
-StyledLink } from "./NavbarStyle"
+import { useState } from "react";
+import {
+  StyledNavbar,
+  StyledNavbarContainer,
+  StyledLinkContainer,
+  StyledLogoContainer,
+  StyledLogo,
+  StyledLink,
+} from "./NavbarStyle";
+import { MenuIcon } from "./MenuIcon";
+import surveyor from "../../assets/Photos/surveyorManWhite.png";
 
-export const Navbar = ({}) => {
-    return(
-        <StyledNavbar>
-            <StyledNavbarContainer>
-                <StyledLogo>LOGO</StyledLogo>
-                <StyledLinkContainer>
-                <StyledLink>O FIRMIE</StyledLink>
-                <StyledLink>OFERTA</StyledLink>
-                <StyledLink>WYCENA</StyledLink>
-                <StyledLink>REALIZACJE</StyledLink>
-                <StyledLink>KONTAKT</StyledLink>
-                </StyledLinkContainer>
-            </StyledNavbarContainer>
-        </StyledNavbar>
-
-    )
-}
+export const Navbar = () => {
+  const [mobile, setMobile] = useState(true);
+  const closeMenu = () => setMobile(false);
+  return (
+    <StyledNavbar>
+      <StyledNavbarContainer>
+        <StyledLogoContainer>
+          <StyledLogo src={surveyor} alt="ff" />
+        </StyledLogoContainer>
+        <MenuIcon mobile={mobile} setMobile={setMobile} />
+        {mobile ? (
+          <StyledLinkContainer mobile>
+            <StyledLink onClick={closeMenu}>O FIRMIE</StyledLink>
+            <StyledLink onClick={closeMenu}>OFERTA</StyledLink>
+            <StyledLink onClick={closeMenu}>WYCENA</StyledLink>
+            <StyledLink onClick={closeMenu}>REALIZACJE</StyledLink>
+            <StyledLink onClick={closeMenu}>KONTAKT</StyledLink>
+          </StyledLinkContainer>
+        ) : (
+          <StyledLinkContainer>
+            <StyledLink>O FIRMIE</StyledLink>
+            <StyledLink>OFERTA</StyledLink>
+            <StyledLink>WYCENA</StyledLink>
+            <StyledLink>REALIZACJE</StyledLink>
+            <StyledLink>KONTAKT</StyledLink>
+          </StyledLinkContainer>
+        )}
+      </StyledNavbarContainer>
+    </StyledNavbar>
+  );
+};

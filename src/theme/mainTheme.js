@@ -1,11 +1,12 @@
 export const theme = {
-  darkCyan: "hsl(158, 36%, 37%)",
-  cream: "hsl(30, 38%, 92%)",
-  veryDarkBlue: "hsl(212, 21%, 14%)",
-  darkGrayishBlue: "hsl(228, 12%, 48%)",
-  white: "hsl(0, 0%, 100%)",
+  primary: "#2B678C",
+  secondary: "#459DBF",
+  teriarty: "#96C6D9",
+  quaternary: "#BEBF9F",
+  black: "#0D0D0D",
   fontWeight: {
-    normal: 500,
+    slim: 100,
+    normal: 400,
     bold: 700,
   },
   fontSize: {
