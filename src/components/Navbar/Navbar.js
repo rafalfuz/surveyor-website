@@ -11,7 +11,7 @@ import { MenuIcon } from "./MenuIcon";
 import surveyor from "../../assets/Photos/surveyorManWhite.png";
 
 export const Navbar = () => {
-  const [mobile, setMobile] = useState(true);
+  const [mobile, setMobile] = useState(false);
   const closeMenu = () => setMobile(false);
   return (
     <StyledNavbar>

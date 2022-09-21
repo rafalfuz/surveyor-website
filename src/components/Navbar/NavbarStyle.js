@@ -70,6 +70,7 @@ export const StyledLink = styled.li`
   color: ${({ theme }) => theme.quaternary};
   text-shadow: 1px 1px black;
   transition: all 0.5s;
+
   &:hover {
     cursor: pointer;
     font-weight: ${({ theme }) => theme.fontWeight.normal};
