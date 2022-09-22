@@ -23,7 +23,6 @@ const slides = [
     id: 2,
     url: "reserve/bnW1TuTV2YGcoh1HyWNQ_IMG_0207.JPG?ixlib=rb-1.2.1&w=1534&q=80",
   },
-  { id: 3, url: "photo-1540206395-68808572332f?ixlib=rb-1.2.1&w=1181&q=80" },
 ];
 
 export const WelcomeSection = () => {
@@ -47,6 +46,7 @@ export const WelcomeSection = () => {
             style={{
               ...props,
               backgroundImage: `url(${img1})`,
+              position: "absolute",
               top: "0",
               left: "0",
               width: "100%",

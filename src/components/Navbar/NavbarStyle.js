@@ -61,7 +61,6 @@ export const StyledLinkContainer = styled.ul`
     left: ${({ mobile }) => (mobile ? 0 : "-100%")};
     transition: all 0.5s ease;
     overflow: hidden;
-    z-index: 999;
   }
 `;
 
