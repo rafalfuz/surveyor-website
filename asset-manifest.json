@@ -1,14 +1,19 @@
 {
   "files": {
-    "main.js": "/surveyor-website/static/js/main.2bf3586b.js",
+    "main.js": "/surveyor-website/static/js/main.f2d87c54.js",
+    "static/media/workingSurveyorsMobile.jpg": "/surveyor-website/static/media/workingSurveyorsMobile.20ffa7ab4a012b9e94c6.jpg",
+    "static/media/workingSurveyorsDesktop.jpg": "/surveyor-website/static/media/workingSurveyorsDesktop.c3114d1c3e63ea73721a.jpg",
     "static/media/surveyorWorksDesc.jpg": "/surveyor-website/static/media/surveyorWorksDesc.3809d955bc0c753c6641.jpg",
+    "static/media/theodoliteFieldDesktop.jpg": "/surveyor-website/static/media/theodoliteFieldDesktop.9e5da9cef113e8cd2007.jpg",
     "static/media/surveyorWorksMobile.jpg": "/surveyor-website/static/media/surveyorWorksMobile.67f844415d209474b720.jpg",
+    "static/media/theodoliteFieldMobile.jpg": "/surveyor-website/static/media/theodoliteFieldMobile.cba3cc68e376cedc3986.jpg",
     "static/media/mapBottomMobile.jpg": "/surveyor-website/static/media/mapBottomMobile.15f599bcf562a2784b7a.jpg",
+    "static/media/logoLevelPng.png": "/surveyor-website/static/media/logoLevelPng.242f5962e07c6652aef4.png",
     "static/media/surveyorManWhite.png": "/surveyor-website/static/media/surveyorManWhite.b6fd8e3c447fe4a57f44.png",
     "index.html": "/surveyor-website/index.html",
-    "main.2bf3586b.js.map": "/surveyor-website/static/js/main.2bf3586b.js.map"
+    "main.f2d87c54.js.map": "/surveyor-website/static/js/main.f2d87c54.js.map"
   },
   "entrypoints": [
-    "static/js/main.2bf3586b.js"
+    "static/js/main.f2d87c54.js"
   ]
 }
