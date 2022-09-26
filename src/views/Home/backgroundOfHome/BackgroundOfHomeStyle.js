@@ -4,6 +4,7 @@ export const StyledBackground = styled.div`
   height: calc(100vh - 100px);
   width: 100vw;
   position: absolute;
+  overflow: hidden;
 `;
 
 export const StyledBackgroundWrapper = styled.div`
@@ -13,5 +14,5 @@ export const StyledBackgroundWrapper = styled.div`
   background-position: center;
   display: flex;
   justify-content: center;
-  align-items: center;  
+  align-items: center;
 `;
