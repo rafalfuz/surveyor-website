@@ -33,6 +33,7 @@ export const StyledLogoContainer = styled.div`
   color: background-color: ${({ theme }) => theme.quaternary};
   text-shadow: 1px 1px black;
   background-blend-mode: darker;
+  
 `;
 
 export const StyledLogo = styled.img`

@@ -8,6 +8,7 @@ export const StyledFront = styled.div`
   top: 100px;
   left: 50%;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   @media screen and (max-width: 960px){
