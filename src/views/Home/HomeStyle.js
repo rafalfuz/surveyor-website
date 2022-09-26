@@ -7,4 +7,5 @@ export const StyledHome = styled.section`
   padding-top: 100px;
   top: 0;
   left: 0;
+  overflow: hidden;
 `;

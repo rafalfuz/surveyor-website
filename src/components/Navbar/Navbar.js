@@ -24,16 +24,18 @@ export const Navbar = () => {
           <StyledLinkContainer mobile>
             <StyledLink onClick={closeMenu}>O FIRMIE</StyledLink>
             <StyledLink onClick={closeMenu}>OFERTA</StyledLink>
-            <StyledLink onClick={closeMenu}>WYCENA</StyledLink>
             <StyledLink onClick={closeMenu}>REALIZACJE</StyledLink>
+            <StyledLink onClick={closeMenu}>REFERENCJE</StyledLink>
+            <StyledLink onClick={closeMenu}>KONTRAHENCI</StyledLink>
             <StyledLink onClick={closeMenu}>KONTAKT</StyledLink>
           </StyledLinkContainer>
         ) : (
           <StyledLinkContainer>
             <StyledLink>O FIRMIE</StyledLink>
             <StyledLink>OFERTA</StyledLink>
-            <StyledLink>WYCENA</StyledLink>
             <StyledLink>REALIZACJE</StyledLink>
+            <StyledLink>REFERENCJE</StyledLink>
+            <StyledLink>KONTRAHENCI</StyledLink>
             <StyledLink>KONTAKT</StyledLink>
           </StyledLinkContainer>
         )}
