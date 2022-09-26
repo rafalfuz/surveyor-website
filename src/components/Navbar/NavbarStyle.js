@@ -12,7 +12,6 @@ export const StyledNavbar = styled.nav`
   align-items: center;
   padding-bottom: 20px;
   z-index: 9999;
-  opacity: 0.3;
 `;
 
 export const StyledNavbarContainer = styled.div`

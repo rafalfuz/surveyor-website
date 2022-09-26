@@ -1,5 +1,10 @@
 import { StyledFront } from "./FrontOfHomeStyle";
+import {Logo} from './Logo'
 
 export const FrontOfHome = () => {
-  return <StyledFront>AAAAA</StyledFront>;
+  return (
+  <StyledFront>
+    <Logo />
+  </StyledFront>
+  )
 };

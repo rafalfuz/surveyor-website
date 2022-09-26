@@ -1,11 +1,17 @@
 import styled from "styled-components";
 
 export const StyledBackground = styled.div`
-  height: 100%;
-  width: 100%;
+  height: calc(100vh - 100px);
+  width: 100vw;
+  position: absolute;
 `;
 
 export const StyledBackgroundWrapper = styled.div`
+  position: absolute;
   width: 100%;
   height: 100%;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;  
 `;

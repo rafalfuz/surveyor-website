@@ -14,22 +14,24 @@ import img3Mobile from "../../../assets/Photos/theodoliteFieldMobile.jpg";
 import { useWindowDimensions } from "../../../HOOKS/useWindowDimensions";
 
 export const BackgroundOfHome = () => {
-  const { height, width } = useWindowDimensions();
+  const { width } = useWindowDimensions();
 
   return (
     <StyledBackground>
       <StyledBackgroundWrapper>
         {width < 960 ? (
-          <BackgroundSlider
+          <BackgroundSlider 
             images={[img1Mobile, img2Mobile, img3Mobile]}
             duration={10}
             transition={3}
+            style={{border: '10px'}}
           ></BackgroundSlider>
         ) : (
           <BackgroundSlider
             images={[img1Desktop, img2Desktop, img3Desktop]}
             duration={10}
             transition={2}
+            style={{border: '10px solid black'}}
           ></BackgroundSlider>
         )}
       </StyledBackgroundWrapper>

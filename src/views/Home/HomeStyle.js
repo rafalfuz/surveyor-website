@@ -1,10 +1,10 @@
 import styled from "styled-components";
 
 export const StyledHome = styled.section`
-  height: ${({}) => `calc(100vh - 100px)`};
+  height: 100vh;
   width: 100vw;
   position: relative;
-  top: 100px;
+  padding-top: 100px;
+  top: 0;
   left: 0;
-  border: 1px solid orange;
 `;
