@@ -16,5 +16,7 @@ export const GlobalStyles = createGlobalStyle`
   body {
     font-size: 1.6rem;
     font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+    background-color: #2B678C;
   }
 `;

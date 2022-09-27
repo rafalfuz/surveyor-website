@@ -13,8 +13,8 @@ export const StyledFront = styled.div`
   justify-content: center;
   @media screen and (max-width: 960px){
     width: 100%;
-    height: 25%;
+    height: 50%;
     left: 0;
-    top: 37.5%;
+    top: 32.5%;
   }
 `;

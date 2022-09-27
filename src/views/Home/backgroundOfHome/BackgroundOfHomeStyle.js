@@ -15,4 +15,5 @@ export const StyledBackgroundWrapper = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 `;
