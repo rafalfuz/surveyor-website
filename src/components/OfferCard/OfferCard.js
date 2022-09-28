@@ -1,26 +1,34 @@
-import { OfferInfo } from "./OfferInfo"
+import { OfferInfo } from "./OfferInfo";
 
-import {StyledOfferCard} from './OfferCardStyle'
-import { useState } from "react"
+import { StyledOfferCard } from "./OfferCardStyle";
+import { useState } from "react";
 
-export const OfferCard = () => {
+export const OfferCard = ({ icon, photo, photoName, title, description }) => {
+  const [activeCard, setActiveCard] = useState(false);
 
-    const [activeCard, setActiveCard] = useState(false)
+  const handleMouseEnter = (e) => {
+    setActiveCard(true);
+  };
 
-    const handleMouseEnter = e => {
-        setActiveCard(true)
-    }
+  const handleMouseLeave = (e) => {
+    setActiveCard(false);
+  };
 
-    const handleMouseLeave = e => {
-        setActiveCard(false)
-    }
-
-    return(
-        <StyledOfferCard onMouseEnter={handleMouseEnter}
-        onMouseLeave={handleMouseLeave}
-        onClick={()=>setActiveCard(!activeCard)} activeCard={activeCard}
-        ><p>{activeCard.toString()}</p>
-            <OfferInfo activeCard={activeCard} title='Geotechnika'/>
-        </StyledOfferCard>
-    )
-}
+  return (
+    <StyledOfferCard
+      onMouseEnter={handleMouseEnter}
+      onMouseLeave={handleMouseLeave}
+      onClick={() => setActiveCard(!activeCard)}
+      activeCard={activeCard}
+      photo={photo}
+    >
+      <OfferInfo
+        activeCard={activeCard}
+        icon={icon}
+        altText={photoName}
+        title={title}
+        description={description}
+      />
+    </StyledOfferCard>
+  );
+};

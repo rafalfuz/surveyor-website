@@ -1,11 +1,19 @@
-import styled from 'styled-components'
+import styled from "styled-components";
 
 export const StyledOfferCard = styled.div`
-    width: 500px;
-    height: 320px;
-    background-color: ${({theme})=>theme.primary};
+  width: 800px;
+  height: 480px;
+  background-image: ${({ photo }) => `url(${photo})`};
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+  margin: 0 45px;
+  border: 4px solid black;
+  @media screen and (max-width: 960px) {
+    width: 360px;
+    height: 215px;
+    margin: 20px 0;
     border: 3px solid black;
-    position: relative;
-    overflow: hidden;
-`
-
+  }
+`;

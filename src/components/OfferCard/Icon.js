@@ -1,12 +1,9 @@
-import {StyledIcon, StyledImage} from './IconStyle'
-import geologicial from '../../assets/Photos/geological.png'
+import { StyledIcon, StyledImage } from "./IconStyle";
 
-export const Icon = () => {
-    return(
-        <StyledIcon><StyledImage src={geologicial} alt='imgKindOfOffer'/></StyledIcon>
-        )
-}
-
-
-
-
+export const Icon = ({ icon, altText }) => {
+  return (
+    <StyledIcon>
+      <StyledImage src={icon} alt={altText} />
+    </StyledIcon>
+  );
+};
