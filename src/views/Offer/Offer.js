@@ -1,5 +1,10 @@
+import { OfferCard } from "../../components/OfferCard/OfferCard";
 import { StyledOffer } from "./OfferStyle";
 
 export const Offer = () => {
-  return <StyledOffer></StyledOffer>;
+  return <StyledOffer>
+    <OfferCard />
+    <OfferCard />
+    <OfferCard />
+  </StyledOffer>;
 };
