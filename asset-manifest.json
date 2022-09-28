@@ -1,19 +1,23 @@
 {
   "files": {
-    "main.js": "/surveyor-website/static/js/main.890c7ed9.js",
+    "main.js": "/surveyor-website/static/js/main.efa354cd.js",
     "static/media/workingSurveyorsMobile.jpg": "/surveyor-website/static/media/workingSurveyorsMobile.20ffa7ab4a012b9e94c6.jpg",
     "static/media/workingSurveyorsDesktop.jpg": "/surveyor-website/static/media/workingSurveyorsDesktop.c3114d1c3e63ea73721a.jpg",
     "static/media/surveyorWorksDesc.jpg": "/surveyor-website/static/media/surveyorWorksDesc.3809d955bc0c753c6641.jpg",
     "static/media/theodoliteFieldDesktop.jpg": "/surveyor-website/static/media/theodoliteFieldDesktop.9e5da9cef113e8cd2007.jpg",
     "static/media/surveyorWorksMobile.jpg": "/surveyor-website/static/media/surveyorWorksMobile.67f844415d209474b720.jpg",
     "static/media/theodoliteFieldMobile.jpg": "/surveyor-website/static/media/theodoliteFieldMobile.cba3cc68e376cedc3986.jpg",
+    "static/media/geodezyjnaObslugaInwestycji.jpg": "/surveyor-website/static/media/geodezyjnaObslugaInwestycji.c8dfa86f2f3c781f16f0.jpg",
     "static/media/mapBottomMobile.jpg": "/surveyor-website/static/media/mapBottomMobile.15f599bcf562a2784b7a.jpg",
+    "static/media/tyczenieObjektow.jpg": "/surveyor-website/static/media/tyczenieObjektow.f4451071ae692b529ef3.jpg",
     "static/media/logoLevelPng.png": "/surveyor-website/static/media/logoLevelPng.242f5962e07c6652aef4.png",
+    "static/media/mapyDoCelowProjektowych.jpg": "/surveyor-website/static/media/mapyDoCelowProjektowych.f439a3dfad0d8718f36d.jpg",
     "static/media/surveyorManWhite.png": "/surveyor-website/static/media/surveyorManWhite.b6fd8e3c447fe4a57f44.png",
+    "static/media/podzialyRozgraniczenia.jpg": "/surveyor-website/static/media/podzialyRozgraniczenia.864bad7d50929405c247.jpg",
     "index.html": "/surveyor-website/index.html",
-    "main.890c7ed9.js.map": "/surveyor-website/static/js/main.890c7ed9.js.map"
+    "main.efa354cd.js.map": "/surveyor-website/static/js/main.efa354cd.js.map"
   },
   "entrypoints": [
-    "static/js/main.890c7ed9.js"
+    "static/js/main.efa354cd.js"
   ]
 }
