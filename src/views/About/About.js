@@ -27,7 +27,10 @@ export const About = () => {
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur
             asperiores rem exercitationem fugit esse repudiandae iste, iure
             nesciunt mollitia excepturi magnam ipsam, dolore a dicta illum
-            quaerat numquam neque eligendi?
+            quaerat numquam neque eligendi? Lorem ipsum dolor sit amet
+            consectetur adipisicing elit. Tenetur asperiores rem exercitationem
+            fugit esse repudiandae iste, iure nesciunt mollitia excepturi magnam
+            ipsam, dolore a dicta illum quaerat numquam neque eligendi?
           </StyledDescription>
           <StyledDescription>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur

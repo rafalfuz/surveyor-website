@@ -27,7 +27,9 @@ export const Offer = () => {
         altText="Mapy Do Celow Projektowych"
         icon={blueprint}
         title="Mapy do celów projektowych"
-        description={lorem}
+        description={
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent id faucibus nunc, in placerat nisi. Nulla a ex aliquet, scelerisque ipsum sit amet, viverra odio. Sed lacus dui, pellentesque non posuere sit amet, dignissim eu purus. In ac sagittis lorem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent id faucibus nunc, in placerat nisi."
+        }
       />
       <OfferCard
         photo={tyczenieObjektow}
