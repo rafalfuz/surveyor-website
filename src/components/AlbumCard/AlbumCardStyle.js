@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled, {css} from 'styled-components'
 import stadium from '../../assets/Photos/stadium.jpg'
 
 export const StyledAlbumCard = styled.div`
@@ -7,7 +7,10 @@ export const StyledAlbumCard = styled.div`
     height: 25vw;
     margin: 20px;
     overflow: hidden;
-    
+    @media screen and (max-width: 960px){
+        width: 90%;
+        height: 100%;
+    }
 `
 
 export const StyledAlbumTitle = styled.p`
@@ -17,6 +20,10 @@ export const StyledAlbumTitle = styled.p`
     color: ${({theme})=>theme.black};
     text-transform: uppercase;
     position: absolute;
+    z-index: 99;
+    &:hover{
+        cursor: pointer;
+    }
 `
 
 export const StyledBackgroundPhoto = styled.div`
@@ -29,9 +36,9 @@ position: absolute;
 top: 0;
 left: 0;
 transition: .5s;
-&:hover{
-    cursor: pointer;
+${props => props.albumCardHover && css`
     transform: scale(1.3);
-    
-}
+    transition: .5s;
+    cursor: pointer;
+`}
 `
