@@ -8,7 +8,7 @@ export const StyledOfferCard = styled.div`
   background-size: cover;
   position: relative;
   overflow: hidden;
-  margin: 0 45px;
+  margin: 25px 45px;
   border: 4px solid black;
   @media screen and (max-width: 960px) {
     width: 360px;
