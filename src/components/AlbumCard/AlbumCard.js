@@ -5,7 +5,6 @@ export const AlbumCard = () => {
         <StyledAlbumCard>
             <StyledAlbumTitle>Plac budowym na ulicy Kościuszki</StyledAlbumTitle>
             <StyledBackgroundPhoto />
-            <StyledAlbumTitle>Plac budowym na ulicy Kościuszki</StyledAlbumTitle>
         </StyledAlbumCard>
     )
 }
