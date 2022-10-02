@@ -4,7 +4,7 @@ export const StyledOfferInfo = styled.div`
   width: calc(100% + 10px);
   height: 50%;
   position: absolute;
-  top: ${({ activeCard }) => (activeCard ? "50%" : "70%")};
+  top: ${({ activeCard }) => (activeCard ? "50%" : "72.5%")};
   left: 0;
   display: flex;
   justify-content: flex-start;
