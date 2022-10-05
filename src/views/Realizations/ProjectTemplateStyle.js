@@ -49,7 +49,7 @@ export const StyledInfo = styled.div`
   flex-basis: 50%;
 `;
 
-export const StyledDescription = styled.p`
+export const StyledDescription = styled.div`
   height: 250px;
   @media screen and (max-width: 960px) {
     height: auto;

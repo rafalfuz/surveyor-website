@@ -14,16 +14,19 @@ import {
 import "react-image-gallery/styles/css/image-gallery.css";
 import ImageGallery from "react-image-gallery";
 import { useEffect } from "react";
-import { useLocation } from "react-router-dom";
+import { useLocation, useNavigate} from "react-router-dom";
 
-export const ProjectTemplate = ({ title, description }) => {
+export const ProjectTemplate = ({ title, description, client, localization, imagesArray }) => {
+  const navigate = useNavigate()
   const { pathname } = useLocation();
 
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [pathname]);
 
-  const images = [
+  const images = imagesArray
+  {/*  Array Template 
+        const images = [
     {
       original: "https://picsum.photos/id/1018/1000/600/",
       thumbnail: "https://picsum.photos/id/1018/250/150/",
@@ -37,6 +40,9 @@ export const ProjectTemplate = ({ title, description }) => {
       thumbnail: "https://picsum.photos/id/1019/250/150/",
     },
   ];
+
+*/}
+
   return (
     <StyledWrapper>
       <StyledBackground />
@@ -46,26 +52,23 @@ export const ProjectTemplate = ({ title, description }) => {
         </StyledTitle>
         <StyledInfos>
           <StyledInfo>
-            Klient: <StyledPattern bold>Wisła Płock</StyledPattern>
+            Klient: <StyledPattern bold>{client}</StyledPattern>
           </StyledInfo>
           <StyledInfo>
             Lokalizacja:{" "}
-            <StyledPattern bold>Płock, ulica Łukasiewicza</StyledPattern>
+            <StyledPattern bold>{localization}</StyledPattern>
           </StyledInfo>
         </StyledInfos>
         <StyledDescription>
           Opis:{" "}
           <StyledPattern>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis
-            deserunt eum, iure repudiandae eligendi ipsam totam doloribus
-            reiciendis adipisci alias, voluptas id illo! Dolore quae repudiandae
-            reiciendis magnam, aspernatur officia!
+            {description}
           </StyledPattern>
         </StyledDescription>
         <StyledPhotos>Galeria:</StyledPhotos>
         <ImageGallery items={images} />
         <StyledLink to="/">
-          <StyledBackBtn>WRÓĆ</StyledBackBtn>
+          <StyledBackBtn onClick={()=>navigate(-1)}>WRÓĆ</StyledBackBtn>
         </StyledLink>
       </StyledContainer>
     </StyledWrapper>
