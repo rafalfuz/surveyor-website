@@ -16,7 +16,7 @@ const DefaultView = () => {
       <Home />
       <About />
       <Offer />
-      <Realizations />
+      <Realizations name="realizationSection" />
     </>
   );
 };
