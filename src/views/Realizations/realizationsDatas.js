@@ -59,7 +59,7 @@ export const realizationsDatas = [
         original: "https://picsum.photos/id/1040/1000/600/",
         thumbnail: "https://picsum.photos/id/1019/250/150/",
       },],
-    albumCardPhoto: 'https://picsum.photos/id/1040/1000/600/',
+    albumCardPhoto: 'https://picsum.photos/id/1040/400/400/',
     projectViewBackgroundPhoto: 'https://picsum.photos/id/1029/1000/600/'
     },
 
@@ -89,7 +89,7 @@ export const realizationsDatas = [
         original: "https://picsum.photos/id/183/1000/600/",
         thumbnail: "https://picsum.photos/id/183/250/150/",
         },],
-    albumCardPhoto: 'https://picsum.photos/id/122/1000/600/',
+    albumCardPhoto: 'https://picsum.photos/id/122/400/400/',
     projectViewBackgroundPhoto: 'https://picsum.photos/id/128/1000/600/'
     },
 
@@ -111,7 +111,7 @@ export const realizationsDatas = [
             original: "https://picsum.photos/id/216/1000/600/",
             thumbnail: "https://picsum.photos/id/216/250/150/",
             },],
-        albumCardPhoto: 'https://picsum.photos/id/1058/1000/600/',
+        albumCardPhoto: 'https://picsum.photos/id/1058/400/400/',
         projectViewBackgroundPhoto: 'https://picsum.photos/id/1058/1000/600/'
     },
 
@@ -133,7 +133,7 @@ export const realizationsDatas = [
             original: "https://picsum.photos/id/433/1000/600/",
             thumbnail: "https://picsum.photos/id/433/250/150/",
         },],
-        albumCardPhoto: 'https://picsum.photos/id/577/1000/600/',
+        albumCardPhoto: 'https://picsum.photos/id/577/400/400/',
         projectViewBackgroundPhoto: 'https://picsum.photos/id/582/1000/600/'
     },
 
@@ -159,7 +159,7 @@ export const realizationsDatas = [
             original: "https://picsum.photos/id/665/1000/600/",
             thumbnail: "https://picsum.photos/id/665/250/150/",
         },],
-        albumCardPhoto: 'https://picsum.photos/id/629/1000/600/',
+        albumCardPhoto: 'https://picsum.photos/id/629/400/400/',
         projectViewBackgroundPhoto: 'https://picsum.photos/id/529/1000/600/'
     },
 
@@ -221,7 +221,7 @@ export const realizationsDatas = [
             original: "https://picsum.photos/id/1040/1000/600/",
             thumbnail: "https://picsum.photos/id/1019/250/150/",
           },],
-        albumCardPhoto: 'https://picsum.photos/id/1040/1000/600/',
+        albumCardPhoto: 'https://picsum.photos/id/1040/400/400/',
         projectViewBackgroundPhoto: 'https://picsum.photos/id/1029/1000/600/'
         },
     
@@ -251,12 +251,12 @@ export const realizationsDatas = [
             original: "https://picsum.photos/id/183/1000/600/",
             thumbnail: "https://picsum.photos/id/183/250/150/",
             },],
-        albumCardPhoto: 'https://picsum.photos/id/122/1000/600/',
+        albumCardPhoto: 'https://picsum.photos/id/122/600/600/',
         projectViewBackgroundPhoto: 'https://picsum.photos/id/128/1000/600/'
         },
     
         {id: 8,
-            title: 'Boiska przy szkole podstawowej nr 12',
+            title: 'Boiska przy szkole podstawowej nr 122',
             path: '/boiskasp12',
             description: lorem,
             client: 'Urząd Miasta Płock',
@@ -273,7 +273,7 @@ export const realizationsDatas = [
                 original: "https://picsum.photos/id/216/1000/600/",
                 thumbnail: "https://picsum.photos/id/216/250/150/",
                 },],
-            albumCardPhoto: 'https://picsum.photos/id/1058/1000/600/',
+            albumCardPhoto: 'https://picsum.photos/id/1058/600/600/',
             projectViewBackgroundPhoto: 'https://picsum.photos/id/1058/1000/600/'
         },
 ]
