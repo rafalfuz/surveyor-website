@@ -1,5 +1,5 @@
 import styled, { css } from "styled-components";
-import stadium from "../../assets/Photos/stadium.jpg";
+import defaultAlbumCardPhoto from "../../assets/Photos/defaultAlbumCardPhoto.jpg";
 
 export const StyledAlbumCard = styled.div`
   position: relative;
@@ -30,7 +30,7 @@ export const StyledAlbumTitle = styled.p`
 `;
 
 export const StyledBackgroundPhoto = styled.div`
-  background-image: url(${stadium});
+  background-image: url(${({albumCardPhoto})=>albumCardPhoto ? albumCardPhoto : defaultAlbumCardPhoto});
   background-size: cover;
   background-position: center;
   width: 100%;

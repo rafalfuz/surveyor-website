@@ -5,7 +5,7 @@ import {
   StyledBackgroundPhoto,
 } from "./AlbumCardStyle";
 
-export const AlbumCard = () => {
+export const AlbumCard = ({title, albumCardPhoto}) => {
   const [activeAlbumCard, setActiveAlbumCard] = useState(false);
 
   const handleMouseEnter = (e) => {
@@ -22,9 +22,9 @@ export const AlbumCard = () => {
       onMouseLeave={handleMouseLeave}
     >
       <StyledAlbumTitle albumCardHover={activeAlbumCard}>
-        Stadion piłkarski przy ulicy Łukasiewicza
+        {title}
       </StyledAlbumTitle>
-      <StyledBackgroundPhoto albumCardHover={activeAlbumCard} />
+      <StyledBackgroundPhoto albumCardHover={activeAlbumCard} albumCardPhoto={albumCardPhoto}/>
     </StyledAlbumCard>
   );
 };

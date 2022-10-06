@@ -1,6 +1,6 @@
 import { ProjectTemplate } from "./ProjectTemplate";
 
-export const ProjectView = ({title, description, client, localization, imagesArray}) => {
+export const ProjectView = ({title, description, client, localization, imagesArray, projectViewBackgroundPhoto}) => {
   return (
     <>
       <ProjectTemplate 
@@ -8,7 +8,8 @@ export const ProjectView = ({title, description, client, localization, imagesArr
       description={description} 
       client={client} 
       localization={localization} 
-      imagesArray={imagesArray}/>
+      imagesArray={imagesArray}
+      projectViewBackgroundPhoto={projectViewBackgroundPhoto}/>
     </>
   );
 };

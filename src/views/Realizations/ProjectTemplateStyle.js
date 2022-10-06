@@ -1,14 +1,14 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 
-import santiago from "../../assets/Photos/santiago.jpg";
+import defaultProjectTemplateBackground from "../../assets/Photos/defaultProjectTemplateBackground.jpg";
 
 export const StyledWrapper = styled.div`
   width: 100vw;
 `;
 
 export const StyledBackground = styled.div`
-  background-image: url(${santiago});
+  background-image: url(${({projectViewBackgroundPhoto})=>projectViewBackgroundPhoto ? projectViewBackgroundPhoto : defaultProjectTemplateBackground});
   background-image: no-repeat;
   background-position: center;
   background-size: cover;
@@ -63,6 +63,7 @@ export const StyledPattern = styled.p`
   font-size: ${({ theme }) => theme.fontSize.l};
   color: ${({ theme }) => theme.primary};
   padding-top: 10px;
+  padding-right: ${({paddingRight})=>paddingRight ? '50px' : '0'};
   font-weight: ${({ bold }) =>
     bold
       ? ({ theme }) => theme.fontWeight.bold

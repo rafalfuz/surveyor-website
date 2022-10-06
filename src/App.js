@@ -8,6 +8,7 @@ import { About } from "./views/About/About";
 import { Offer } from "./views/Offer/Offer";
 import { Realizations } from "./views/Realizations/Realizations";
 import { ProjectView } from "./views/Realizations/ProjectView";
+import { realizationsDatas } from "./views/Realizations/realizationsDatas";
 
 const DefaultView = () => {
   return (
@@ -23,28 +24,23 @@ const DefaultView = () => {
 
 export const App = () => {
 
-  const images = [
-    {
-      original: "https://picsum.photos/id/1018/1000/600/",
-      thumbnail: "https://picsum.photos/id/1018/250/150/",
-    },
-    {
-      original: "https://picsum.photos/id/1015/1000/600/",
-      thumbnail: "https://picsum.photos/id/1015/250/150/",
-    },
-    {
-      original: "https://picsum.photos/id/1019/1000/600/",
-      thumbnail: "https://picsum.photos/id/1019/250/150/",
-    },
-  ];
-
   return (
     <>
       <GlobalStyles />
       <ThemeProvider theme={theme}>
         <Routes>
           <Route exact path="/" element={<DefaultView />} />
-          <Route exact path="/stadium" element={<ProjectView title='Siedziba główna ROXY' imagesArray={images}/>} />
+          {realizationsDatas.map((item)=>
+          <Route 
+          key={item.id}
+          exact path={item.path} 
+          element={<ProjectView 
+          title={item.title} 
+          description={item.description} 
+          client={item.client} 
+          localization={item.localization}
+          projectViewBackgroundPhoto={item.projectViewBackgroundPhoto} 
+          imagesArray={item.imagesArray}/>}/>)}
         </Routes>
       </ThemeProvider>
     </>

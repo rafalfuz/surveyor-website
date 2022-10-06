@@ -16,7 +16,9 @@ import ImageGallery from "react-image-gallery";
 import { useEffect } from "react";
 import { useLocation, useNavigate} from "react-router-dom";
 
-export const ProjectTemplate = ({ title, description, client, localization, imagesArray }) => {
+
+
+export const ProjectTemplate = ({ title, description, client, localization, imagesArray, projectViewBackgroundPhoto }) => {
   const navigate = useNavigate()
   const { pathname } = useLocation();
 
@@ -24,35 +26,17 @@ export const ProjectTemplate = ({ title, description, client, localization, imag
     window.scrollTo(0, 0);
   }, [pathname]);
 
-  const images = imagesArray
-  {/*  Array Template 
-        const images = [
-    {
-      original: "https://picsum.photos/id/1018/1000/600/",
-      thumbnail: "https://picsum.photos/id/1018/250/150/",
-    },
-    {
-      original: "https://picsum.photos/id/1015/1000/600/",
-      thumbnail: "https://picsum.photos/id/1015/250/150/",
-    },
-    {
-      original: "https://picsum.photos/id/1019/1000/600/",
-      thumbnail: "https://picsum.photos/id/1019/250/150/",
-    },
-  ];
-
-*/}
 
   return (
     <StyledWrapper>
-      <StyledBackground />
+      <StyledBackground projectViewBackgroundPhoto={projectViewBackgroundPhoto}/>
       <StyledContainer>
         <StyledTitle>
           <StyledPattern bold>{title}</StyledPattern>
         </StyledTitle>
         <StyledInfos>
           <StyledInfo>
-            Klient: <StyledPattern bold>{client}</StyledPattern>
+            Klient: <StyledPattern bold paddingRight>{client}</StyledPattern>
           </StyledInfo>
           <StyledInfo>
             Lokalizacja:{" "}
@@ -66,7 +50,7 @@ export const ProjectTemplate = ({ title, description, client, localization, imag
           </StyledPattern>
         </StyledDescription>
         <StyledPhotos>Galeria:</StyledPhotos>
-        <ImageGallery items={images} />
+        <ImageGallery items={imagesArray} />
         <StyledLink to="/">
           <StyledBackBtn onClick={()=>navigate(-1)}>WRÓĆ</StyledBackBtn>
         </StyledLink>
