@@ -3,38 +3,30 @@ import { Link } from "react-router-dom";
 
 export const StyledRealizations = styled.section`
   background-color: ${({ theme }) => theme.primary};
-  width: 95vw;
+  width: 100vw;
+  margin: 0 auto;
   min-height: calc(100vh - 100px);
   height: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  border: 1px solid violet;
+  justify-content: flex-start;
   @media screen and (max-width: 960px){
     height: auto;
-    
   }
 }
 `;
 
 export const StyledContainer = styled.ul`
   width: 95vw;
+  height: 100%;
   display: flex;
-  align-items: space-around;
-  justify-content: space-around;;
   flex-wrap: wrap;
-  border: 1px solid yellow;
-`
+  align-content: flex-start;
+  justify-content: space-evenly;
+`;
 
 export const StyledLink = styled(Link)`
-  border: 1px solid black;
-  width: 25vw;
-  height: 25vw;
-  margin: 20px;
-  overflow: hidden;
-  @media screen and (max-width: 960px) {
-    width: 90vw;
-    height: 90vw;
-  }
-`
+  margin: 15px;
+  display: block;
+`;

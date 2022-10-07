@@ -5,7 +5,6 @@ export const StyledAlbumCard = styled.div`
   position: relative;
   width: 25vw;
   height: 25vw;
-  margin: 20px;
   overflow: hidden;
   @media screen and (max-width: 960px) {
     width: 95vw;
@@ -30,7 +29,8 @@ export const StyledAlbumTitle = styled.p`
 `;
 
 export const StyledBackgroundPhoto = styled.div`
-  background-image: url(${({albumCardPhoto})=>albumCardPhoto ? albumCardPhoto : defaultAlbumCardPhoto});
+  background-image: url(${({ albumCardPhoto }) =>
+    albumCardPhoto ? albumCardPhoto : defaultAlbumCardPhoto});
   background-size: cover;
   background-position: center;
   width: 100%;
