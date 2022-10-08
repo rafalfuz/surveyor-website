@@ -26,7 +26,7 @@ export const referencesDatas = [
     logoImg:
       "https://aeroklubplock.pl/hangar/wp-content/uploads/2019/02/logo300.png",
     company: "Aeroklub Ziemi Mazowieckiej",
-    logoWidth: "75%",
+    logoWidth: "55%",
     description: lorem,
     service: "podział działek",
     link: "https://ostrowskirowermiejski.pl/wp-content/uploads/2019/04/Regulamin-ORM-2018.pdf",

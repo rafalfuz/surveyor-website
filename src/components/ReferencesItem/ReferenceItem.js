@@ -1,4 +1,4 @@
-import { HrLine } from "../HrLine/HrLine";
+import { HrLine, HrLine2 } from "../HrLine/HrLine";
 import {
   StyledReferenceItem,
   StyledLogoContainer,

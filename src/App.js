@@ -10,6 +10,7 @@ import { Realizations } from "./views/Realizations/Realizations";
 import { ProjectView } from "./views/Realizations/ProjectView";
 import { realizationsDatas } from "./views/Realizations/realizationsDatas";
 import { References } from "./views/Referents/References";
+import { Contractors } from "./views/Contractors/Contractors";
 
 const DefaultView = () => {
   return (
@@ -19,8 +20,8 @@ const DefaultView = () => {
       <About />
       <Offer />
       <Realizations />
-
       <References />
+      <Contractors/>
     </>
   );
 };

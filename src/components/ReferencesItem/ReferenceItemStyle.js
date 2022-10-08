@@ -60,13 +60,20 @@ export const StyledDescription = styled.p`
 `;
 
 export const StyledLink = styled(Link)`
-  flex-basis: 25%;
+  flex-basis: auto;
+  width: 250px;
+  text-align: center;
   display: flex;
   align-items: flex-start;
+  justify-content: center;
   text-decoration: none;
   color: ${({ theme }) => theme.black};
+  border: 1px solid ${({ theme }) => theme.primary};
+  padding: 10px;
+  letter-spacing: 1px;
   @media screen and (max-width: 960px) {
     justify-content: center;
-    padding-bottom: 15px;
+    align-items: center;
+    margin: 0 auto;
   }
 `;
