@@ -8,7 +8,10 @@ export const StyledWrapper = styled.div`
 `;
 
 export const StyledBackground = styled.div`
-  background-image: url(${({projectViewBackgroundPhoto})=>projectViewBackgroundPhoto ? projectViewBackgroundPhoto : defaultProjectTemplateBackground});
+  background-image: url(${({ projectViewBackgroundPhoto }) =>
+    projectViewBackgroundPhoto
+      ? projectViewBackgroundPhoto
+      : defaultProjectTemplateBackground});
   background-image: no-repeat;
   background-position: center;
   background-size: cover;
@@ -50,11 +53,9 @@ export const StyledInfo = styled.div`
 `;
 
 export const StyledDescription = styled.div`
-  height: 250px;
-  @media screen and (max-width: 960px) {
-    height: auto;
-    padding-bottom: 20px;
-  }
+  height: auto
+  text-align: justify;
+  padding-bottom: 20px;
 `;
 
 export const StyledPhotos = styled.div``;
@@ -63,7 +64,7 @@ export const StyledPattern = styled.p`
   font-size: ${({ theme }) => theme.fontSize.l};
   color: ${({ theme }) => theme.primary};
   padding-top: 10px;
-  padding-right: ${({paddingRight})=>paddingRight ? '50px' : '0'};
+  padding-right: ${({ paddingRight }) => (paddingRight ? "50px" : "0")};
   font-weight: ${({ bold }) =>
     bold
       ? ({ theme }) => theme.fontWeight.bold
