@@ -11,6 +11,7 @@ import { ProjectView } from "./views/Realizations/ProjectView";
 import { realizationsDatas } from "./views/Realizations/realizationsDatas";
 import { References } from "./views/Referents/References";
 import { Contractors } from "./views/Contractors/Contractors";
+import { ContactUs } from "./views/ContactUs/ContactUs";
 
 const DefaultView = () => {
   return (
@@ -21,7 +22,7 @@ const DefaultView = () => {
       <Offer />
       <Realizations />
       <References />
-      <Contractors/>
+      <Contractors />
     </>
   );
 };
@@ -33,6 +34,7 @@ export const App = () => {
       <ThemeProvider theme={theme}>
         <Routes>
           <Route exact path="/" element={<DefaultView />} />
+          <Route exact path="/formularzkontaktowy" element={<ContactUs />} />
           {realizationsDatas.map((item) => (
             <Route
               key={item.id}
