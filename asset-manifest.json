@@ -1,13 +1,15 @@
 {
   "files": {
     "main.css": "/surveyor-website/static/css/main.f0c64c66.css",
-    "main.js": "/surveyor-website/static/js/main.e8a83a6a.js",
+    "main.js": "/surveyor-website/static/js/main.1ef4d52f.js",
     "static/media/workingSurveyorsMobile.jpg": "/surveyor-website/static/media/workingSurveyorsMobile.20ffa7ab4a012b9e94c6.jpg",
     "static/media/workingSurveyorsDesktop.jpg": "/surveyor-website/static/media/workingSurveyorsDesktop.c3114d1c3e63ea73721a.jpg",
     "static/media/defaultProjectTemplateBackground.jpg": "/surveyor-website/static/media/defaultProjectTemplateBackground.49b26801d752b894258f.jpg",
     "static/media/surveyorWorksDesc.jpg": "/surveyor-website/static/media/surveyorWorksDesc.3809d955bc0c753c6641.jpg",
+    "static/media/topographyDesktop.jpg": "/surveyor-website/static/media/topographyDesktop.462930fb26f22adf1d10.jpg",
     "static/media/theodoliteFieldDesktop.jpg": "/surveyor-website/static/media/theodoliteFieldDesktop.9e5da9cef113e8cd2007.jpg",
     "static/media/surveyorWorksMobile.jpg": "/surveyor-website/static/media/surveyorWorksMobile.67f844415d209474b720.jpg",
+    "static/media/topographyMobile.jpg": "/surveyor-website/static/media/topographyMobile.6db58a2c1c9e848aaa32.jpg",
     "static/media/defaultAlbumCardPhoto.jpg": "/surveyor-website/static/media/defaultAlbumCardPhoto.894180f804ea58798b1e.jpg",
     "static/media/theodoliteFieldMobile.jpg": "/surveyor-website/static/media/theodoliteFieldMobile.cba3cc68e376cedc3986.jpg",
     "static/media/geodezyjnaObslugaInwestycji.jpg": "/surveyor-website/static/media/geodezyjnaObslugaInwestycji.c8dfa86f2f3c781f16f0.jpg",
@@ -19,10 +21,10 @@
     "static/media/podzialyRozgraniczenia.jpg": "/surveyor-website/static/media/podzialyRozgraniczenia.864bad7d50929405c247.jpg",
     "index.html": "/surveyor-website/index.html",
     "main.f0c64c66.css.map": "/surveyor-website/static/css/main.f0c64c66.css.map",
-    "main.e8a83a6a.js.map": "/surveyor-website/static/js/main.e8a83a6a.js.map"
+    "main.1ef4d52f.js.map": "/surveyor-website/static/js/main.1ef4d52f.js.map"
   },
   "entrypoints": [
     "static/css/main.f0c64c66.css",
-    "static/js/main.e8a83a6a.js"
+    "static/js/main.1ef4d52f.js"
   ]
 }
