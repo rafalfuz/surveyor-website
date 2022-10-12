@@ -10,11 +10,16 @@ import {
 import { Form } from "../../components/Form/Form";
 import { StyledTitleOfSection } from "../../components/TitleOfSection/TitleOfSectionStyle";
 
-export const ContactUs = () => {
+export const ContactUs = ({ noBckGrdImg, noBackBtn }) => {
   return (
-    <StyledContactUs>
+    <StyledContactUs noBckGrdImg={noBckGrdImg}>
       <StyledWrapper>
-        <StyledTitleOfSection marginLeft="20px" height="60px" lineHeight="60px">
+        <StyledTitleOfSection
+          marginLeft="20px"
+          height="60px"
+          lineHeight="60px"
+          formTitle
+        >
           Formularz kontaktowy
         </StyledTitleOfSection>
         <StyledInfoContainer>
@@ -38,7 +43,7 @@ export const ContactUs = () => {
           </StyledInfo>
         </StyledInfoContainer>
         <StyledFormContainer>
-          <Form />
+          <Form noBackBtn={noBackBtn} />
         </StyledFormContainer>
       </StyledWrapper>
     </StyledContactUs>

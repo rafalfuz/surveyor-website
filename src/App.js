@@ -12,6 +12,7 @@ import { realizationsDatas } from "./views/Realizations/realizationsDatas";
 import { References } from "./views/Referents/References";
 import { Contractors } from "./views/Contractors/Contractors";
 import { ContactUs } from "./views/ContactUs/ContactUs";
+import { Contact } from "./views/ContactUs/Contact";
 
 const DefaultView = () => {
   return (
@@ -23,6 +24,7 @@ const DefaultView = () => {
       <Realizations />
       <References />
       <Contractors />
+      <Contact />
     </>
   );
 };

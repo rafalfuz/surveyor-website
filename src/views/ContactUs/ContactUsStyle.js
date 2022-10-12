@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 import backgroundDesktop from "../../assets/Photos/topographyDesktop.jpg";
 import backgroundMobile from "../../assets/Photos/topographyMobile.jpg";
 
@@ -12,6 +12,20 @@ export const StyledContactUs = styled.section`
   display: flex;
   justify-content: center;
   align-items: center;
+  @media screen and (max-width: 960px) {
+    background-image: url(${backgroundMobile});
+    height: auto;
+    padding: 20px 0;
+  }
+  ${(props) =>
+    props.noBckGrdImg &&
+    css`
+      background: none;
+      background-color: ${({ theme }) => theme.secondary};
+      @media screen and (max-width: 960px) {
+        background: none;
+      }
+    `}
 `;
 
 export const StyledWrapper = styled.div`
@@ -24,12 +38,25 @@ export const StyledWrapper = styled.div`
   align-items: center;
   justify-content: space-around;
   box-shadow: 0 10px 30px -10px hsla(0, 0%, 0%, 0.8);
+  @media screen and (max-width: 960px) {
+    width: 90%;
+    height: 95%;
+    background-color: rgba(43, 103, 140, 0.8);
+    justify-content: flex-start;
+  }
 `;
 
 export const StyledInfoContainer = styled.div`
   width: 90%;
   margin: 0 auto;
   padding: 10px 0;
+  @media screen and (max-width: 960px) {
+    padding: 5px 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+  }
 `;
 
 export const StyledInfo = styled.div`
@@ -47,6 +74,9 @@ export const StyledPattern = styled.p`
     bold
       ? ({ theme }) => theme.fontWeight.bold
       : ({ theme }) => theme.fontWeight.normal}};
+  @media screen and (max-width: 960px){
+    font-size: ${({ theme }) => theme.fontSize.m};
+  }
       
 `;
 
