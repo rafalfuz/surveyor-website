@@ -20,7 +20,7 @@ const lorem =
 
 export const Offer = () => {
   return (
-    <StyledOffer>
+    <StyledOffer name="offerSection">
       <StyledSectionTitle>OFERTA</StyledSectionTitle>
       <OfferCard
         photo={mapyDoCelowProjektowych}

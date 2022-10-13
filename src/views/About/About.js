@@ -12,7 +12,7 @@ import { StyledSectionTitle } from "../../components/TitleOfSection/TitleOfSecti
 
 export const About = () => {
   return (
-    <StyledAbout>
+    <StyledAbout name="aboutSection">
       <StyledSectionTitle>O mnie</StyledSectionTitle>
       <StyledAboutContainer>
         <StyledPhotoWrapper>

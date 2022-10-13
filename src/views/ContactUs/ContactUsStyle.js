@@ -63,6 +63,11 @@ export const StyledInfo = styled.div`
   display: flex;
   align-items: center;
   padding: 5px;
+  margin-left: 10px;
+  font-size: ${({ theme }) => theme.fontSize.m};
+  @media screen and (max-width: 960px) {
+    font-size: ${({ theme }) => theme.fontSize.s};
+  }
 `;
 
 export const StyledPattern = styled.p`
@@ -83,4 +88,12 @@ export const StyledPattern = styled.p`
 export const StyledFormContainer = styled.div`
   width: 90%;
   margin: 0 auto;
+`;
+
+export const StyledA = styled.a`
+  display: block;
+  text-decoration: none;
+  color: ${({ theme }) => theme.black};
+  font-weight: ${({ theme }) => theme.fontWeight.bold};
+  margin-left: 10px;
 `;

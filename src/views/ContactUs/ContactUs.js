@@ -5,6 +5,7 @@ import {
   StyledFormContainer,
   StyledInfo,
   StyledPattern,
+  StyledA,
 } from "./ContactUsStyle";
 
 import { Form } from "../../components/Form/Form";
@@ -32,13 +33,15 @@ export const ContactUs = ({ noBckGrdImg, noBackBtn }) => {
           <StyledInfo>
             Numer telefonu:{" "}
             <StyledPattern bold color="${({theme})=>theme.black;}">
-              24 3658789
+              <StyledA href="tel:+48502087657">502 087 657</StyledA>
             </StyledPattern>
           </StyledInfo>
           <StyledInfo>
             Adres e-mail:{" "}
             <StyledPattern bold color="${({theme})=>theme.black;}">
-              geodezja@email.com
+              <StyledA href="mailto: ch.przemyslaw@gmail.com">
+                ch.przemyslaw@gmail.com
+              </StyledA>
             </StyledPattern>
           </StyledInfo>
         </StyledInfoContainer>

@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { animateScroll as scroll } from "react-scroll";
 import {
   StyledNavbar,
   StyledNavbarContainer,
@@ -13,30 +14,89 @@ import surveyor from "../../assets/Photos/surveyorManWhite.png";
 export const Navbar = () => {
   const [mobile, setMobile] = useState(false);
   const closeMenu = () => setMobile(false);
+  const toTop = () => {
+    scroll.scrollToTop();
+    closeMenu();
+  };
+
   return (
     <StyledNavbar>
       <StyledNavbarContainer>
         <StyledLogoContainer>
-          <StyledLogo src={surveyor} alt="ff" />
+          <StyledLogo src={surveyor} alt="ff" onClick={toTop} />
         </StyledLogoContainer>
         <MenuIcon mobile={mobile} setMobile={setMobile} />
         {mobile ? (
           <StyledLinkContainer mobile>
-            <StyledLink onClick={closeMenu}>O FIRMIE</StyledLink>
-            <StyledLink onClick={closeMenu}>OFERTA</StyledLink>
-            <StyledLink onClick={closeMenu}>REALIZACJE</StyledLink>
-            <StyledLink onClick={closeMenu}>REFERENCJE</StyledLink>
-            <StyledLink onClick={closeMenu}>KONTRAHENCI</StyledLink>
-            <StyledLink onClick={closeMenu}>KONTAKT</StyledLink>
+            <StyledLink
+              to="aboutSection"
+              smooth={true}
+              offset={-100}
+              onClick={closeMenu}
+            >
+              O FIRMIE
+            </StyledLink>
+            <StyledLink
+              to="offerSection"
+              smooth={true}
+              offset={-100}
+              onClick={closeMenu}
+            >
+              OFERTA
+            </StyledLink>
+            <StyledLink
+              to="realizationSection"
+              smooth={true}
+              offset={-100}
+              onClick={closeMenu}
+            >
+              REALIZACJE
+            </StyledLink>
+            <StyledLink
+              to="referencesSection"
+              smooth={true}
+              offset={-100}
+              onClick={closeMenu}
+            >
+              REFERENCJE
+            </StyledLink>
+            <StyledLink
+              to="contractorsSection"
+              smooth={true}
+              offset={-100}
+              onClick={closeMenu}
+            >
+              KONTRAHENCI
+            </StyledLink>
+            <StyledLink
+              to="contactSection"
+              smooth={true}
+              offset={-100}
+              onClick={closeMenu}
+            >
+              KONTAKT
+            </StyledLink>
           </StyledLinkContainer>
         ) : (
           <StyledLinkContainer>
-            <StyledLink>O FIRMIE</StyledLink>
-            <StyledLink>OFERTA</StyledLink>
-            <StyledLink>REALIZACJE</StyledLink>
-            <StyledLink>REFERENCJE</StyledLink>
-            <StyledLink>KONTRAHENCI</StyledLink>
-            <StyledLink>KONTAKT</StyledLink>
+            <StyledLink to="aboutSection" smooth={true} offset={-100}>
+              O FIRMIE
+            </StyledLink>
+            <StyledLink to="offerSection" smooth={true} offset={-100}>
+              OFERTA
+            </StyledLink>
+            <StyledLink to="realizationSection" smooth={true} offset={-100}>
+              REALIZACJE
+            </StyledLink>
+            <StyledLink to="referencesSection" smooth={true} offset={-100}>
+              REFERENCJE
+            </StyledLink>
+            <StyledLink to="contractorsSection" smooth={true} offset={-100}>
+              KONTRAHENCI
+            </StyledLink>
+            <StyledLink to="contactSection" smooth={true} offset={-100}>
+              KONTAKT
+            </StyledLink>
           </StyledLinkContainer>
         )}
       </StyledNavbarContainer>

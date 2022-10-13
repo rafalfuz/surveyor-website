@@ -5,7 +5,7 @@ import { StyledReferences, StyledContainer } from "./ReferencesStyle";
 
 export const References = () => {
   return (
-    <StyledReferences>
+    <StyledReferences name="referencesSection">
       <StyledTitleOfSection>referencje</StyledTitleOfSection>
       <StyledContainer>
         {referencesDatas.map((item) => (

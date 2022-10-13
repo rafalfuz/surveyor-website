@@ -20,18 +20,18 @@ export const BackgroundOfHome = () => {
     <StyledBackground>
       <StyledBackgroundWrapper>
         {width < 960 ? (
-          <BackgroundSlider 
-            images={[img1Mobile, img2Mobile, img3Mobile]}
+          <BackgroundSlider
+            images={[img2Mobile, img3Mobile, img1Mobile]}
             duration={10}
             transition={3}
-            style={{border: '10px'}}
+            style={{ border: "10px" }}
           ></BackgroundSlider>
         ) : (
           <BackgroundSlider
-            images={[img1Desktop, img2Desktop, img3Desktop]}
+            images={[img2Desktop, img3Desktop, img1Desktop]}
             duration={10}
             transition={2}
-            style={{border: '10px solid black'}}
+            style={{ border: "10px solid black" }}
           ></BackgroundSlider>
         )}
       </StyledBackgroundWrapper>

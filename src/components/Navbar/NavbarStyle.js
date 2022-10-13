@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import NavBottomMobile from "../../assets/Photos/mapBottomMobile.jpg";
+import { Link } from "react-scroll";
 
 export const StyledNavbar = styled.nav`
   position: fixed;
@@ -66,7 +67,7 @@ export const StyledLinkContainer = styled.ul`
   }
 `;
 
-export const StyledLink = styled.li`
+export const StyledLink = styled(Link)`
   font-size: 22px;
   font-weight: ${({ theme }) => theme.fontWeight.slim};
   color: ${({ theme }) => theme.quaternary};
